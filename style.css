@@ -1,0 +1,120 @@
+
+  /* Services Section */
+  .services{
+    background: #141414;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .services h1{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+  }
+
+  .services_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .services_card{
+    margin: 23px;
+    height: 275px;
+    width: 200px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%),
+    url(https://images.pexels.com/photos/249360/pexels-photo-249360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 98% 85%;
+    position: relative;
+    color: #fff;
+  }
+   
+
+   .services_card:nth-child(2){
+     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%),
+    url('https://images.pexels.com/photos/7128667/pexels-photo-7128667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  
+   }
+
+   .services_card:nth-child(3){
+     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%),
+    url('https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   }
+
+   .services h2{
+    position:absolute;
+    top: 255px;
+    left: 20px;
+    background-color: #f7f6f6;
+  
+    background-size: 60%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+ 
+   
+}
+
+   .services_card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    font-size: 1.5rem;;
+   }
+
+   .services_card button{
+    color: #fff;
+    padding: 2px 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background: #f77062;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+   }
+
+   .services_card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+   }
+
+   @media screen and (max-width:960px){
+    .services{
+        height: 1600px;
+    }
+    .services h1{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+   }
+
+   @media screen and (max-width:480px){
+    .services{
+        height: 1400px;
+    }
+    .services h1{
+        font-size: 1.2rem;
+    }
+    .services_card{
+        width: 300px;
+    }
+   }
